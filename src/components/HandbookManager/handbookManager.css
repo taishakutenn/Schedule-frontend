@@ -1,0 +1,19 @@
+.handbook-manager {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.handbook-manager__toolbar {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.handbook-manager__pagination {
+    display: flex;
+    align-self: center;
+    margin-top: 5px;
+    gap: 15px;
+}

@@ -1,0 +1,20 @@
+# Сборка и зависимости
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Логи и окружение
+*.log
+.env*
+
+# Системные файлы
+.DS_Store
+.idea/
+.vscode/
+
+# Файлы блокировок пакетов
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

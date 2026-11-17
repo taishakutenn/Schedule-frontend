@@ -1,0 +1,41 @@
+@import "./reset.css";
+@import "./themes.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scrollbar-width: none;
+}
+
+.main-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background-color);
+    
+    color: var(--primary-text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-regular);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 15px 30px;
+}

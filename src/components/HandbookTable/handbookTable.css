@@ -1,0 +1,98 @@
+/* Обёртка таблицы для прокрутки */
+.handbook-table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    max-height: calc(100vh - 300px);
+    border-radius: 5px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.handbook-table {
+    width: fit-content;
+    min-width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    color: var(--primary-text-color);
+    background-color: var(--surface-background-color);
+    font-family: var(--font-family-base);
+    font-size: 13px;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.handbook-table th,
+.handbook-table td {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.handbook-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--surface-hover-color);
+}
+
+/* Строки тела таблицы: подсветка при наведении и при выделении кликом */
+.handbook-table tbody tr {
+    cursor: pointer;
+}
+
+.handbook-table tbody tr:hover {
+    background-color: var(--surface-hover-color);
+}
+
+.handbook-table tbody tr.handbook-table__row--selected,
+.handbook-table tbody tr.handbook-table__row--selected:hover {
+    background-color: var(--primary-blue-color);
+}
+
+.handbook-table__head th {
+    padding: 10px 0;
+    background-color: var(--surface-hover-color);
+    color: var(--primary-text-color);
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    border-radius: 5px;
+}
+
+/* Больше 3 колонок в таблице - растягиваем на всю ширину */
+.handbook-table--wide {
+    width: 100%;
+}
+
+/* Адаптация для экранов меньше 1078px */
+@media (max-width: 1078px) {
+    .handbook-table {
+        min-width: 700px;
+        font-size: 12px;
+    }
+
+    .handbook-table--wide {
+        min-width: 800px;
+    }
+
+    .handbook-table td {
+        padding: 10px 12px;
+    }
+}
+
+/* Кастомизация скроллбара */
+.handbook-table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.handbook-table-wrapper::-webkit-scrollbar-track {
+    background: var(--main-background-color);
+    border-radius: 4px;
+}
+
+.handbook-table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--neutral-border-color);
+    border-radius: 4px;
+}
+
+.handbook-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-text-color);
+}

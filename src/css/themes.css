@@ -1,0 +1,40 @@
+:root {
+    --main-background-color: #333333;
+    --surface-background-color: #3B3B3B;
+    --surface-hover-color: #474747;
+
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #858585;
+    --tertiary-text-color: #5C5C5C;
+    --text-on-light-color: #000000;
+
+    --light-blue-card-color: #E6F1FD;
+    --light-lavender-card-color: #EDEEFC;
+
+    --primary-blue-color: #4d82b8;
+    --secondary-blue-colorcolo: #A0BCE8;
+    --brand-blue-color: #4C98FD;
+    --lavender-color: #ADADFB;
+    --purple-color: #B899EB;
+    --mint-color: #6BE6D3;
+
+    --success-color: #71DD8C;
+    --warning-color: #FFB55B;
+    --danger-color: #BB2124;
+    --neutral-border-color: #D9D9D9;
+
+    /* Цвета кнопок */
+    --button-primary-color: #4C98FD;
+    --button-secondary-color: #5A5A5A;
+    --button-success-color: #3FA968;
+    --button-danger-color: #E5484D;
+
+    --font-family-base: "Inter", sans-serif;
+    --font-size-base: 18px;
+    --font-size-second: 14px;
+    --font-size-big: 36px;
+    --font-size-small: 8px;
+    --line-height-base: 20px;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+}

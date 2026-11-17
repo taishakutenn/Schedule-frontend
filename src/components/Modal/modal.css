@@ -1,0 +1,76 @@
+/* Затемняющий фон на весь экран */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Небольшое затемнение всего экрана */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Окно модалки */
+.modal__window {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100vw - 60px);
+    max-height: calc(100vh - 60px);
+    padding: 15px 30px;
+    border: 1px solid var(--surface-hover-color);
+    border-radius: 10px;
+    /* Эффект стекла: полупрозрачный фон + размытие того, что находится под окном */
+    background-color: color-mix(in srgb, var(--surface-background-color) 25%, transparent);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--primary-text-color);
+    overflow-y: auto;
+}
+
+/* Размеры окна */
+.modal__window--small {
+    max-width: 400px;
+}
+
+.modal__window--medium {
+    max-width: 600px;
+}
+
+.modal__window--large {
+    max-width: 900px;
+}
+
+/* Шапка модалки: заголовок и крестик на одной строке */
+.modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Заголовок окна */
+.modal__title {
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Крестик для закрытия окна */
+.modal__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: none;
+    background: none;
+    color: var(--secondary-text-color);
+    font-size: var(--font-size-base);
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal__close:hover {
+    color: var(--primary-text-color);
+}

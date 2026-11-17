@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--surface-background-color);
+    display: flex;
+    min-height: 30px;
+}
+
+.footer-container {
+    display: flex;
+    flex: 1;
+    margin: 15px;
+    gap: 10px;
+    align-items: center;
+    color: var(--secondary-text-color);
+    font-size: var(--font-size-second);
+}
+
+.footer-container__info-block {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+}
